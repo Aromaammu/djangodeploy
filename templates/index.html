@@ -1,0 +1,18 @@
+{% extends 'theme.html' %}
+{% block content %}
+<h1> SAREE STORE</h1>
+<div class ="row">
+    {% for Product in product %}
+    <div class ="col-md-3"></div>
+    <div class="card" style="...">
+        <img src="{{Product.image}}" class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">{{Product.name}}</h5>
+            <p class="card-text">${{Product.price}}</p>
+            <a href="#" class="btn btn-primary">Buy</a>
+        </div>
+    </div>
+</div>
+{% endfor %}
+</div>
+{%endblock%}
